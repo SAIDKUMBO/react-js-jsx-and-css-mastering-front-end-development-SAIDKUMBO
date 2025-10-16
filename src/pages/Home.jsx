@@ -1,6 +1,6 @@
-import React from 'react'
-import Card from '../../week3-react-tailwind/components/Card'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import Card from "../components/Card";
 
 export default function Home(){
   return (
