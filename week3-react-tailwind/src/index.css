@@ -1,9 +1,29 @@
+/* index.css */
+
+/* Tailwind base styles */
 @tailwind base;
+
+/* Tailwind component classes */
 @tailwind components;
+
+/* Tailwind utility classes */
 @tailwind utilities;
 
-/* Optional small helpers */
-.fade-enter { opacity: 0; transform: translateY(6px); }
-.fade-enter-active { opacity: 1; transform: translateY(0); transition: all 200ms; }
+/* Custom global styles */
+body {
+  font-family: 'Inter', sans-serif; /* Clean modern font */
+}
 
+/* Smooth transition for color changes (dark/light mode) */
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
 
+/* Optional: Smooth card hover effect */
+.card-transition {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-transition:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
